@@ -1,0 +1,57 @@
+zerops:
+  # Production setup: Nitro bundles all deps into .output/ —
+  # no node_modules needed at runtime. Full-document SSR with
+  # TanStack Start server functions.
+  - setup: prod
+    build:
+      base: nodejs@22
+      buildCommands:
+        # npm install (not ci) — TanStack Start / Nitro transitive
+        # deps may reject npm ci peer resolution on fresh scaffolds.
+        - npm install --ignore-scripts=false --min-release-age=0
+        - npm run build
+
+      deployFiles:
+        # Nitro output includes server bundle + static assets.
+        - .output
+
+      cache:
+        - node_modules
+        - .nitro
+
+    deploy:
+      readinessCheck:
+        httpGet:
+          port: 3000
+          path: /
+
+    run:
+      base: nodejs@22
+      ports:
+        - port: 3000
+          httpSupport: true
+      envVariables:
+        NODE_ENV: production
+      start: node .output/server/index.mjs
+
+  # Dev setup: deploys full source for SSH-based development.
+  # Developer SSHs in and runs `npm run dev`.
+  - setup: dev
+    build:
+      base: nodejs@22
+      os: ubuntu
+      buildCommands:
+        - npm install --ignore-scripts=false --min-release-age=0
+      deployFiles: ./
+      cache:
+        - node_modules
+
+    run:
+      base: nodejs@22
+      os: ubuntu
+      ports:
+        - port: 3000
+          httpSupport: true
+      envVariables:
+        NODE_ENV: development
+      start: zsc noop --silent

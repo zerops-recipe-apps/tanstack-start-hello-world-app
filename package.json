@@ -1,0 +1,54 @@
+{
+  "name": "tanstack-start-hello-world-app",
+  "version": "1.0.0",
+  "description": "Minimal TanStack Start SSR demo on Zerops (Nitro node output, nodejs@22).",
+  "author": "Zerops",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerops-recipe-apps/tanstack-start-hello-world-app.git"
+  },
+  "homepage": "https://app.zerops.io/recipes/tanstack-start-hello-world",
+  "bugs": {
+    "url": "https://github.com/zerops-recipe-apps/tanstack-start-hello-world-app/issues"
+  },
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && tsc --noEmit",
+    "preview": "vite preview",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "1.170.18",
+    "@tanstack/react-start": "1.168.32",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.2.2",
+    "@types/node": "22.19.11",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "nitro": "3.0.260311-beta",
+    "tailwindcss": "4.2.2",
+    "typescript": "7.0.2",
+    "vite": "8.1.5"
+  },
+  "keywords": [
+    "tanstack-start",
+    "tanstack-router",
+    "react",
+    "zerops",
+    "ssr",
+    "nitro",
+    "hello-world"
+  ]
+}
