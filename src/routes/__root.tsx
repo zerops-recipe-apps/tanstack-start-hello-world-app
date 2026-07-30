@@ -21,10 +21,7 @@ export const Route = createRootRoute({
           'Minimal TanStack Start SSR demo deployed on Zerops with Nitro.',
       }),
     ],
-    links: [
-      { rel: 'stylesheet', href: appCss },
-      { rel: 'icon', href: '/favicon.ico' },
-    ],
+    links: [{ rel: 'stylesheet', href: appCss }],
   }),
   errorComponent: DefaultCatchBoundary,
   notFoundComponent: () => <NotFound />,

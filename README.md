@@ -10,7 +10,7 @@ Used within [TanStack Start Hello World recipe](https://app.zerops.io/recipes/ta
 
 [![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/light/deploy-button.svg)](https://app.zerops.io/recipes/tanstack-start-hello-world?environment=small-production)
 
-![TanStack Start app](./public/tanstack-start-app.webp)
+![TanStack Start app](./public/tanstack-start-app.png)
 
 ## Integration Guide
 

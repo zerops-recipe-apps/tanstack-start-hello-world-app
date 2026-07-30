@@ -51,11 +51,11 @@ function Home() {
               aria-hidden
             />
             <img
-              src="/android-chrome-512x512.png"
-              alt="TanStack Start"
-              width={88}
+              src="/logos/tanstack-stacked-white.svg"
+              alt="TanStack"
+              width={220}
               height={88}
-              className="relative rounded-3xl shadow-2xl shadow-violet-500/20 ring-1 ring-white/10"
+              className="relative h-auto w-44 sm:w-52"
             />
           </div>
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
