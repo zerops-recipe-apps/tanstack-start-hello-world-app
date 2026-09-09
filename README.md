@@ -24,7 +24,7 @@ TanStack Start uses the [Nitro Vite plugin](https://tanstack.com/start/latest/do
 zerops:
   - setup: prod
     build:
-      base: nodejs@22
+      base: nodejs@24
       buildCommands:
         - npm install --ignore-scripts=false --min-release-age=0
         - npm run build
@@ -39,7 +39,7 @@ zerops:
           port: 3000
           path: /
     run:
-      base: nodejs@22
+      base: nodejs@24
       ports:
         - port: 3000
           httpSupport: true
@@ -49,7 +49,7 @@ zerops:
 
   - setup: dev
     build:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
       buildCommands:
         - npm install --ignore-scripts=false --min-release-age=0
@@ -57,7 +57,7 @@ zerops:
       cache:
         - node_modules
     run:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
       ports:
         - port: 3000

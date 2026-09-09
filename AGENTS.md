@@ -1,12 +1,12 @@
 # tanstack-start-hello-world-app
 
-Minimal [TanStack Start](https://tanstack.com/start/latest) SSR app (Nitro Node output) on Zerops `nodejs@22`.
+Minimal [TanStack Start](https://tanstack.com/start/latest) SSR app (Nitro Node output) on Zerops `nodejs@24`.
 
 ## Zerops service facts
 
 - HTTP port: `3000` (dev `npm run dev` / prod `node .output/server/index.mjs`)
 - Siblings: —
-- Runtime base: `nodejs@22`
+- Runtime base: `nodejs@24`
 
 ## Zerops dev
 

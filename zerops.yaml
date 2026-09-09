@@ -4,7 +4,7 @@ zerops:
   # TanStack Start server functions.
   - setup: prod
     build:
-      base: nodejs@22
+      base: nodejs@24
       buildCommands:
         # npm install (not ci) — TanStack Start / Nitro transitive
         # deps may reject npm ci peer resolution on fresh scaffolds.
@@ -26,7 +26,7 @@ zerops:
           path: /
 
     run:
-      base: nodejs@22
+      base: nodejs@24
       ports:
         - port: 3000
           httpSupport: true
@@ -38,7 +38,7 @@ zerops:
   # Developer SSHs in and runs `npm run dev`.
   - setup: dev
     build:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
       buildCommands:
         - npm install --ignore-scripts=false --min-release-age=0
@@ -47,7 +47,7 @@ zerops:
         - node_modules
 
     run:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
       ports:
         - port: 3000
