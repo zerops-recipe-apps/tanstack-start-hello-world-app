@@ -21,6 +21,6 @@ Minimal [TanStack Start](https://tanstack.com/start/latest) SSR app (Nitro Node 
 ## Notes
 
 - Uses the Nitro Vite plugin — production output lives in `.output/` ([hosting guide](https://tanstack.com/start/latest/docs/framework/react/guide/hosting)).
-- Build uses `npm install --ignore-scripts=false --min-release-age=0` — TanStack Start RC packages may be blocked by the repo `.npmrc` `min-release-age=7` default.
+- Build uses `npm install --ignore-scripts=false --min-release-age=0` — fresh TanStack Start releases may be blocked by the repo `.npmrc` `min-release-age=7` default.
 - `@tanstack/react-router-devtools` is omitted from this hello-world recipe to keep the prod bundle lean.
 - Brand asset: `public/logos/tanstack-stacked-white.svg` on the home page.

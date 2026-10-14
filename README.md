@@ -1,7 +1,7 @@
 # TanStack Start Hello World Recipe App
 
 <!-- #ZEROPS_EXTRACT_START:intro# -->
-A server-rendered [TanStack Start](https://tanstack.com/start/latest) application with Nitro Node output and a sample server function — deployed on [Zerops](https://zerops.io).
+A server-rendered [TanStack Start](https://tanstack.com/start/latest) 1.0 application with Nitro Node output and a sample server function — deployed on [Zerops](https://zerops.io).
 <!-- #ZEROPS_EXTRACT_END:intro# -->
 
 Used within [TanStack Start Hello World recipe](https://app.zerops.io/recipes/tanstack-start-hello-world) for [Zerops](https://zerops.io) platform.
